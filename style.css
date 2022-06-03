@@ -19,10 +19,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #151515;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #151515;
 }
 
 .header-second {
@@ -30,7 +30,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #151515;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -42,6 +41,8 @@ header {
 }
 
 .header-icons {
+  position: relative;
+  left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +131,38 @@ header {
   position: relative;
   bottom: 32px;
   left: 470px;
+}
+
+.categories {
+  width: 1260px;
+  height: 55px;
+}
+
+.menu {
+  border: 1px solid #D1D1D1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 16px 45px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 15px;
+  padding-right: 33px;
 }
 
 .logo {

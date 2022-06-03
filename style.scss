@@ -14,18 +14,19 @@ header {
   font-size:12px;
   background-color: #FFFFFF;
   display:flex; 
-  border: 1px solid #151515;
   align-items: center;
+  border-bottom:1px solid #151515;;
   &-second {
     background-color: #FFFFFF;
     display:flex; 
-    border: 1px solid #151515;
     justify-content: space-between;
     padding: 0px 45px 0px 45px;
     height:130px;
     align-items: center;
   }
   &-icons {
+    position:relative;
+    left:20px;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +84,27 @@ header {
     position:relative;
     bottom: 32px;
     left: 470px;
+  }
+}
+
+.categories {
+  width:1260px;
+  height:55px;
+}
+
+.menu {
+  border: 1px solid #D1D1D1;
+  display:flex;
+  margin:0px;
+  padding: 16px 45px;
+  justify-content: space-between;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    font-size:15px;
+    padding-right:33px;
+
   }
 }
 
