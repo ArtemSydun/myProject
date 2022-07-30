@@ -4,6 +4,8 @@
   <style>
     body {background-color: #E5E5E5;}
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+  <script src="/js/script.js"> </script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <meta charset="UTF-8">
@@ -15,35 +17,61 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="open-burger">
+    <div class="burger-menu">
+      <input class="checkbox" type="checkbox" name="" id="" />
+      <div class="burger-lines">
+        <span class="line-first"></span>
+        <span class="line-second"></span>
+      </div>
+    </div>
+    <nav class="burger">
+      <ul class="burger-list">
+        <li class="burger-item"><a href="#" class="burger-link">Bakery</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Fruit and vegetables</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Meat and fish</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Drinks</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Kitchen</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Baby</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Pharmacy</a></li>
+        <li class="burger-item"><a href="#" class="burger-link">Special nutrition</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="wrapper">
-    <header>
-      <header class="header">
-        <nav>
+
+      <div class="navigation">
+        <nav class="box-nav">
+          <img src="/img/Freshnesecom.svg" class="logo">
           <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="" >Chat with us</a></li>
-            <li class="nav-item">+420 336 775 664</li>
-            <li class="nav-item" style="margin-right: 563px;">info@freshnesecom.com</li>
-            <li class="nav-item"><a class="nav-link" href="" >Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="" >About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="" >Careers</a></li>
+            <div class="nav-left">
+              <div class="nav-item"><a class="nav-link" href="" >Chat with us</a></div>
+              <div class="nav-item">+420 336 775 664</div>
+              <div class="nav-item">info@freshnesecom.com</div>
+            </div>
+            <div class="nav-right"> 
+              <div class="nav-item"><a class="nav-link" href="" >Blog</a></div>
+              <div class="nav-item"><a class="nav-link" href="" >About Us</a></div>
+              <div class="nav-item"><a class="nav-link" href="" >Careers</a></div>
+            </div>
           </ul>
         </nav>
-      </header>
+      </div>
         <header class="header-second">
           <img src="/img/Freshnesecom.svg" class="logo">
           <div class="input">
             <input type="search" class="search" placeholder="Name of product">
-            <img src="/img/ic-actions-search.svg" class="search-icon">
           </div>
             <div class="header-icons">
+              <img class="contact-icon" src="/img/ic-contact-phone.svg" alt="">
+              <img class="contact-icon" src="/img/ic-contact-mail.svg" alt="">
+              <img src="/img/ic-actions-search.svg" class="search-icon">
               <img src="/img/ic-actions-user.svg" alt="index.html">
               <img src="/img/ic-ecommerce-basket.svg" alt="index.html">
               <div class="number-of-basket">4</div>
           </div>
       </header>
-    </header>
     <div class="categories">
-      <nav>
         <ul class="menu">
           <li class="menu-item">Bakery <i class="arrow-bottom"></i></li>
           <li class="menu-item">Fruit and vegetables <i class="arrow-bottom"></i></li>
@@ -53,12 +81,20 @@
           <li class="menu-item">Special nutrition <i class="arrow-bottom"></i></li>
           <li class="menu-item">Baby <i class="arrow-bottom"></i></li>
           <li class="menu-item">Pharmacy <i class="arrow-bottom"></i></li>
+          <li class="menu-item">Categories<i class="arrow-bottom"></i></li>
         </ul>
-      </nav>
     </div>
     <div class="best">
+      <div class="burger-menu">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="burger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
       <div class="best-block">
-
+        
         <div class="category">
           Category menu
           <ul class="category-menu">
@@ -71,7 +107,6 @@
           <div class="more-button">
             More categories <i class="arrow-right"></i>
           </div>
-          
         </div>
         <div class="banner">
           <div class="banner-title">
@@ -97,8 +132,15 @@
     </div>
 
     <div class="best">
+      <div class="burger-menu">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="burger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
       <div class="best-block">
-
         <div class="category">
           Best selling products
           <ul class="category-menu">
@@ -119,46 +161,52 @@
             <div class="product-description">
               Product title
               <div class="product-description-small">
-                Space for a small product description 
+                Space for a small product description
               </div>
               
             </div>
-            <div class="product-price">
-              1.89 USD
-            </div>
-            <button class="buy-button">Buy now</button>
-          </div>
-        </div>
-        <div class="product">
-          <img src= "https://via.placeholder.com/237x180" style="border-radius: 12px;"/>
-          <div class="product-title">
-            <div class="product-description">
-              Product title
-              <div class="product-description-small">
-                Space for a small product description 
+            <div class="product-price-button">
+              <div class="product-price">
+                1.89 USD
               </div>
-              
-            </div>
-            <div class="product-price">
-              1.89 USD
-            </div>
-            <button class="buy-button">Buy now</button>
-          </div>
-        </div>
-        <div class="product">
-          <img src= "https://via.placeholder.com/237x180" style="border-radius: 12px;"/>
-          <div class="product-title">
-            <div class="product-description">
-              Product title
-              <div class="product-description-small">
-                Space for a small product description 
-              </div>
-              
-            </div>
-            <div class="product-price">
-              1.89 USD
-            </div>
               <button class="buy-button">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src= "https://via.placeholder.com/237x180" style="border-radius: 12px;"/>
+          <div class="product-title">
+            <div class="product-description">
+              Product title
+              <div class="product-description-small">
+                Space for a small product description
+              </div>
+              
+            </div>
+            <div class="product-price-button">
+              <div class="product-price">
+                1.89 USD
+              </div>
+              <button class="buy-button">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src= "https://via.placeholder.com/237x180" style="border-radius: 12px;"/>
+          <div class="product-title">
+            <div class="product-description">
+              Product title
+              <div class="product-description-small">
+                Space for a small product description
+              </div>
+              
+            </div>
+            <div class="product-price-button">
+              <div class="product-price">
+                1.89 USD
+              </div>
+              <button class="buy-button">Buy now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -172,19 +220,23 @@
         <div class="slider-main">
           <div class="slider-item">
             <div class="slider-item-description">
-              “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
-              <div class="slider-item-author">
-                Name and Surname
-              </div>
-              <div class="slider-avatar">
-                <img src="https://unsplash.it/48/48" alt="" style="border-radius:50%">
-              </div>
+                <div class="slider-item-comment">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                </div>
+                <div class="slider-item-author">
+                  Name and Surname
+                </div>
+                <div class="slider-avatar">
+                  <img src="https://unsplash.it/48/48" alt="" style="border-radius:50%">
+                </div>
             </div>
             
           </div>
           <div class="slider-item">
             <div class="slider-item-description">
-              “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+              <div class="slider-item-comment">
+                “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+              </div>
               <div class="slider-item-author">
                 Name and Surname
               </div>
@@ -195,7 +247,9 @@
           </div>
           <div class="slider-item">
             <div class="slider-item-description">
-              “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+              <div class="slider-item-comment">
+                “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+              </div>
               <div class="slider-item-author">
                 Name and Surname
               </div>
@@ -221,10 +275,13 @@
             <div class="product-description">
               Product title
               <div class="product-description-small">
-                Space for a small product description 
+                Space for a small product description
               </div>
               
             </div>
+            
+          </div>
+          <div class="product-price-button">
             <div class="product-price">
               1.89 USD
             </div>
@@ -237,10 +294,13 @@
             <div class="product-description">
               Product title
               <div class="product-description-small">
-                Space for a small product description 
+                Space for a small product description
               </div>
               
             </div>
+            
+          </div>
+          <div class="product-price-button">
             <div class="product-price">
               1.89 USD
             </div>
@@ -253,10 +313,13 @@
             <div class="product-description">
               Product title
               <div class="product-description-small">
-                Space for a small product description 
+                Space for a small product description
               </div>
               
             </div>
+            
+          </div>
+          <div class="product-price-button">
             <div class="product-price">
               1.89 USD
             </div>
@@ -269,14 +332,17 @@
             <div class="product-description">
               Product title
               <div class="product-description-small">
-                Space for a small product description 
+                Space for a small product description
               </div>
               
             </div>
+            
+          </div>
+          <div class="product-price-button">
             <div class="product-price">
               1.89 USD
             </div>
-              <button class="buy-button">Buy now</button>
+            <button class="buy-button">Buy now</button>
           </div>
         </div>
       </div>
@@ -289,8 +355,12 @@
       </div>
       <div class="blog-block">
         <div class="blog-title">
-          <img src="https://via.placeholder.com/350x300" alt="">
-          Our chef tips for a great and tasty dinner ready in 20 minutes
+          <div class="blog-img">
+            <img src="https://via.placeholder.com/350x300" alt="" style="border-radius:12px;width:100%; height:100%;">
+          </div>
+          <div class="blog-description">
+            Our chef tips for a great and tasty dinner ready in 20 minutes
+          </div>
           <div class="blog-author">
             Author
             <div class="blog-date">
@@ -300,15 +370,18 @@
         </div>
         
         <div class="blog-title">
-          <img src="https://via.placeholder.com/350x300" alt="" style="border-radius:12px;">
-          Which vegetable your family will love and want’s eat each day
+          <div class="blog-img">
+            <img src="https://via.placeholder.com/350x300" alt="" style="border-radius:12px; width:100%; height:100%;">
+          </div>
+          <div class="blog-description">
+            Which vegetable your family will love and want’s eat each day
+          </div>
           <div class="blog-author">
             Author
             <div class="blog-date">
               14.1.2020
             </div>
           </div>
-          
         </div>
         <div class="blog-items">
           <div class="blog-item">
@@ -368,6 +441,9 @@
     </div>
     <div class="footer">
       <div class="footer-block">
+        <div class="footer-item">
+          
+        </div>
         <div class="footer-columns">
           <div class="footer-columns-item">
             <div class="footer-columns-title">
@@ -415,7 +491,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-tags">
+        <!-- <div class="footer-tags">
           Product tags
           <div class="footer-tags-block">
               <div class="footer-tags-items">Beans</div>
@@ -438,7 +514,7 @@
               <div class="footer-tags-items">Lemons</div>
               
           </div>
-        </div>
+        </div> -->
         <div class="copyright">
           Copyright © 2020 petrbilek.com
         </div>
